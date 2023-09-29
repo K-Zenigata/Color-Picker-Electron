@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Color Picker</title>
+    <link href="color-32.ico" rel="icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="colorPicker">
+      <div class="header">
+        <div class="dragging-header">Color Picker</div>
+        <div class="close" id="closeButton"></div>
+      </div>
+
+      <div class="container">
+        <div class="control">
+          <div id="colorBox">
+            <!-- ドラッグアンドドロップ用のボックス -->
+            <div id="dragColorBox"></div>
+          </div>
+
+          <div id="colorSlider">
+            <!-- ドラッグアンドドロップ用のボックス -->
+            <div id="dragSliderBox"></div>
+          </div>
+
+          <div id="transparentSlider">
+            <!-- ドラッグアンドドロップ用のボックス -->
+            <div id="dragTransparentSliderBox"></div>
+          </div>
+        </div>
+
+        <div class="display">
+          <div id="showColor">
+            <div id="frontPanel"></div>
+          </div>
+          <div class="colorCode" id="rgb">
+            RGB: <span class="resultCode">rgb(255, 255, 255)</span>
+          </div>
+          <div class="colorCode" id="rgb-c">
+            RGB: <span class="resultCode">255, 255, 255</span>
+          </div>
+          <div class="colorCode" id="hex">
+            HEX: <span class="resultCode">#ffffff</span>
+          </div>
+          <div class="colorCode" id="hex-non">
+            HEX: <span class="resultCode">ffffff</span>
+          </div>
+          <div class="colorCode" id="hsl">
+            hSL: <span class="resultCode">hsl(0, 0%, 100%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="Convert.js"></script>
+    <script src="app.js"></script>
+    <script src="renderer.js"></script>
+  </body>
+</html>
