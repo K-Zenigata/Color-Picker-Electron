@@ -15,8 +15,8 @@ const createWindow = () => {
 
     x: 50,
     y: 50,
-    width: 615,
-    height: 640,
+    width: 613,
+    height: 426,
     resizable: false,
     transparent: true,
     webPreferences: {
